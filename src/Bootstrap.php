@@ -20,11 +20,10 @@ class Bootstrap implements BootstrapInterface
      */
     public function bootstrap($app)
     {
-        Yii::setAlias("@ajaxcrud", __DIR__);
-        Yii::setAlias("@cangak/ajaxcrud", __DIR__);
+        Yii::setAlias("@jobsrey/ajaxcrud", __DIR__);
         if ($app->hasModule('gii')) {
             if (!isset($app->getModule('gii')->generators['ajaxcrud'])) {
-                $app->getModule('gii')->generators['ajaxcrud'] = 'cangak\ajaxcrud\generators\Generator';
+                $app->getModule('gii')->generators['ajaxcrud'] = 'jobsrey\ajaxcrud\generators\Generator';
             }
         }
     }

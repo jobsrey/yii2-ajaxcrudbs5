@@ -6,7 +6,7 @@ use yii\web\AssetBundle;
 
 class CrudAsset extends AssetBundle
 {
-    public $sourcePath = '@jobsrey/assets';
+    public $sourcePath = '@jobsrey/ajaxcrud/assets';
 
     public $css = [
         'ajaxcrud.css'
